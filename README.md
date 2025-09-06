@@ -1,4 +1,4 @@
-# ELEC5305 Project – Real-Time Speech Dereverberation
+# ELEC5305 Project One
 
 **SID**: 530598444  
 **Repo**: elec5305-project-530598444  
