@@ -1,0 +1,10 @@
+utt_id,split,clean_path,rev_path,rir_id,speaker_id
+127389__acclivity__thetimehascome,train,dataset\clean\127389__acclivity__thetimehascome.wav,dataset\reverb\127389__acclivity__thetimehascome.wav,RWCP_type1_rir_circle_ane_imp230,127389
+156550__acclivity__a-dream-within-a-dream,train,dataset\clean\156550__acclivity__a-dream-within-a-dream.wav,dataset\reverb\156550__acclivity__a-dream-within-a-dream.wav,RWCP_type1_rir_circle_e1c_imp070,156550
+165187__blaukreuz__global-village-hochdeutsch,valid,dataset\clean\165187__blaukreuz__global-village-hochdeutsch.wav,dataset\reverb\165187__blaukreuz__global-village-hochdeutsch.wav,RWCP_type4_rir_p90r,165187
+167554__speedenza__memory-eva-gore-booth,test,dataset\clean\167554__speedenza__memory-eva-gore-booth.wav,dataset\reverb\167554__speedenza__memory-eva-gore-booth.wav,air_type1_air_binaural_aula_carolina_1_1_90_3,167554
+34210__acclivity__i-am-female,valid,dataset\clean\34210__acclivity__i-am-female.wav,dataset\reverb\34210__acclivity__i-am-female.wav,air_type1_air_binaural_aula_carolina_1_6_90_3,34210
+352762__kennysvoice__audiokingsz-illusion,train,dataset\clean\352762__kennysvoice__audiokingsz-illusion.wav,dataset\reverb\352762__kennysvoice__audiokingsz-illusion.wav,air_type1_air_binaural_booth_0_1,352762
+382326__scott-simpson__crossing-the-bar,test,dataset\clean\382326__scott-simpson__crossing-the-bar.wav,dataset\reverb\382326__scott-simpson__crossing-the-bar.wav,air_type1_air_binaural_booth_1_3,382326
+72001__corsica-s__electric-masquerade,train,dataset\clean\72001__corsica-s__electric-masquerade.wav,dataset\reverb\72001__corsica-s__electric-masquerade.wav,air_type1_air_binaural_meeting_0_1,72001
+75064__corsica-s__farah-faucet,train,dataset\clean\75064__corsica-s__farah-faucet.wav,dataset\reverb\75064__corsica-s__farah-faucet.wav,air_type1_air_phone_stairway1_hhp,75064
