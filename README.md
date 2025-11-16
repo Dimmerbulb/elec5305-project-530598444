@@ -68,11 +68,7 @@ These methods are computationally cheap and require no training, but assume addi
 
 Tiny-UNet is a small U-Net–style mask estimator operating on STFT magnitudes:
 
-- Input: 1-channel magnitude spectrogram \( M_{\text{noisy}} \in \mathbb{R}^{1 \times F \times T} \)  
-- Output: 1-channel real-valued mask \( mask(f, n) \in [0, 1] \)  
-- Enhanced magnitude: \( \hat{M}(f,n) = mask(f,n) \cdot M_{\text{noisy}}(f,n) \)
-
-Architecture (summary)
+Architecture
 
 - Encoder:
   - ConvBlock(1 → 16) + MaxPool2d(2)
@@ -109,8 +105,6 @@ All methods are evaluated on **exactly the same clean/enhanced pairs**, and we r
 ---
 
 ## 4. Repository structure
-
-```text
 .
 ├─ dataset/
 │  ├─ clean/           # clean speech (input)
@@ -134,8 +128,41 @@ All methods are evaluated on **exactly the same clean/enhanced pairs**, and we r
 │  ├─ metrics.py       # SI-SDR, STOI wrappers
 │  └─ dataset.py       # PyTorch Dataset helpers
 ├─ results/
+
+
 │  ├─ metrics/         # CSV result files
 │  └─ demos/           # audio for listening tests
 ├─ requirements.txt
 └─ README.md
 
+## 5. How to run
+
+### Create a virtual environment and install dependencies：
+
+python -m venv .venv
+.venv\Scripts\activate   # on Windows
+pip install -r requirements.txt
+
+### Generate reverberant data with real RIRs：
+
+python -m scripts.generate_reverb
+
+### Run classical frequency-domain baselines：
+
+python -m scripts.run_baselines
+
+### Train the Tiny-UNet model：
+
+python -m scripts.train_tiny_unet
+
+### Run Tiny-UNet on the test set
+
+python -m scripts.run_tiny_unet
+
+### Evaluate SI-SDR and STOI for all methods
+
+python -m scripts.evaluate_methods
+
+### Export demo samples
+
+python -m scripts.export_demos
