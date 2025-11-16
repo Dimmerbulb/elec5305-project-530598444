@@ -135,6 +135,8 @@ All methods are evaluated on **exactly the same clean/enhanced pairs**, and we r
 ├─ requirements.txt
 └─ README.md
 
+---
+
 ## 5. How to run
 
 ### Create a virtual environment and install dependencies：
@@ -166,3 +168,5 @@ python -m scripts.evaluate_methods
 ### Export demo samples
 
 python -m scripts.export_demos
+
+---
