@@ -7,8 +7,6 @@ This repository compares **classical frequency-domain baselines** with a lightwe
 - Signal fidelity (SI-SDR)  
 - Computational complexity / model size  
 
-The code is designed to be **simple, reproducible and self-contained** for course use.
-
 ---
 
 ## 1. Project overview
